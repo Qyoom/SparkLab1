@@ -18,6 +18,7 @@ object RDD_lab_2 {
         val file = sc.textFile("./test-data/CHANGES.txt")
         println("file.count: " + file.count)
         val filePairRddByFirstWord = file.map(line => (line.split(" ")(0), line))
+        println("first: " + filePairRddByFirstWord.first)
         
         val trainingSet = List(
     		List(270, 43.0, 19.5, 5),
@@ -27,8 +28,10 @@ object RDD_lab_2 {
     		List(408, 53.0, 19.5, 3),
     		List(312, 101.0, 19.9, 6)
         )
-        val f1 = (sc.parallelize(trainingSet)).map(example => ("thisSeemsWorthless", example(0)))
+        val f1 = (sc.parallelize(trainingSet)).map(example => ("thisSeemsWorthless", example))
         println("f1: " + f1.first)
+        
+        
     }
 
 }

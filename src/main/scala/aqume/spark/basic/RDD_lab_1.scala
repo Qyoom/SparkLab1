@@ -32,8 +32,8 @@ object RDD_lab_1 {
 		
 		val alpha = sc.parallelize(List('a', 'b', 'c', 'd'))
 		val numer = sc.parallelize(List(1, 2, 3, 4, 5))
-		val cartDemo = alpha.cartesian(numer)
+		val cartesianDemo = alpha.cartesian(numer)
 		println("alpha.cartesian(numer):")
-		cartDemo.foreach(println)
+		cartesianDemo.foreach(println)
 	}
 }
