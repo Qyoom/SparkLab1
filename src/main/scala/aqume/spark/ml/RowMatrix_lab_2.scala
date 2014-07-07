@@ -37,7 +37,7 @@ object RowMatrix_lab_2 {
 		println("rowMatx2.numCols(): " + rowMatx2.numCols())
 		println("rowMatx2: " + rowMatx2)
         
-    } // end main
+    } //----- end main -------------------------------------//
     
     def unitVect(n: Int, j: Int): Vector = {
 	  	val arr = Array.ofDim[Double](n)
@@ -53,7 +53,6 @@ object RowMatrix_lab_2 {
 		
 		def getRndInt(range: Range): Double = {
 			val rnd = new scala.util.Random
-			
 			return rnd.nextDouble
 		}
 		
