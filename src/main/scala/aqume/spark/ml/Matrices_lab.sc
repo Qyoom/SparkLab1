@@ -4,6 +4,12 @@ import org.apache.spark.mllib._
 import org.apache.spark.mllib.linalg.{Matrices, DenseMatrix}
 
 object Matrices_lab {
+
+	/* Local vectors and local matrices are simple data models that serve as public interfaces.
+	 * The underlying linear algebra operations are provided by Breeze and jblas.
+	 * http://spark.apache.org/docs/latest/mllib-data-types.html
+	 */
+
 	val vals1 = Array(1.0,2.3,3.6,4.7,9.5,10.0)
                                                   //> vals1  : Array[Double] = Array(1.0, 2.3, 3.6, 4.7, 9.5, 10.0)
 	

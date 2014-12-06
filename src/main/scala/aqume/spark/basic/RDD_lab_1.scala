@@ -24,7 +24,7 @@ object RDD_lab_1 {
 		
 		val fbFlat = fixed_or_broken.flatMap(line => line.split(" "))
 		//println("fixed_or_broken.flatMap:")
-		fbFlat.foreach(println)
+		//fbFlat.foreach(println)
 		
 		println("fixes.intersection(broken).count: " + fixes.intersection(broken).count)
 		println("fixes.count: " + fixes.count)

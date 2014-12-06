@@ -18,7 +18,7 @@ object UnitBasedVectors_lab {
   //----------- unit vector exercise : dynamic construction ----------//
   
   def unitVect(n: Int, j: Int): Vector = {
-  	val arr = Array.ofDim[Double](n)
+  		val arr = Array.ofDim[Double](n)
 		arr(j) = 1
 		Vectors.dense(arr)
   }                                               //> unitVect: (n: Int, j: Int)org.apache.spark.mllib.linalg.Vector

@@ -20,8 +20,8 @@ object RowMatrix_lab_2 {
   
 		val randRows: RDD[Vector] = sc.parallelize(randVectList)
 		val rowMatx1: RowMatrix = new RowMatrix(randRows)
-		println("rowMatx1.numRows(): " + rowMatx1.numRows())
-		println("rowMatx1.numCols(): " + rowMatx1.numCols())
+		println("rowMatx1.numRows: " + rowMatx1.numRows)
+		println("rowMatx1.numCols: " + rowMatx1.numCols)
 		println("rowMatx1: " + rowMatx1)
 		
 		//-------- Unit Vectors ---------//
@@ -33,8 +33,8 @@ object RowMatrix_lab_2 {
         
         val unitRows: RDD[Vector] = sc.parallelize(unitVectList)
 		val rowMatx2: RowMatrix = new RowMatrix(unitRows)
-		println("rowMatx2.numRows(): " + rowMatx2.numRows())
-		println("rowMatx2.numCols(): " + rowMatx2.numCols())
+		println("rowMatx2.numRows: " + rowMatx2.numRows)
+		println("rowMatx2.numCols: " + rowMatx2.numCols)
 		println("rowMatx2: " + rowMatx2)
         
     } //----- end main -------------------------------------//
